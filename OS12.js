@@ -92,6 +92,7 @@ async function runTest() {
    //await setValue(driver, '//android.widget.EditText', '채영'); 검색창에 채영 입력
 
    // await clickElement(driver,'//android.widget.EditText' ); 검색창 선택
+
    await driver.pause(3000);
 
     // await driver.pressKeyCode(84); 안드로이드 키값 클릭
