@@ -60,7 +60,7 @@ async function runTest() {
     } catch {  }
 
    // 5초대기
-   await driver.pause(3000);
+   await driver.pause(5000);
   
   } finally {
     await driver.pause(3000);
