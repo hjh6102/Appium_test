@@ -54,7 +54,8 @@ async function runTest() {
   try {
    // 패키지명과 액티비티명을 찾아서 수정
    await clickElement(driver, '//*[@text="배달의민족 CBT"]'); // 바탕화면 app 진입
-   await clickElement(driver, '(//android.widget.ImageView[@resource-id="com.sampleapp.cbt:id/characterImageView"])[2]'); //서비스홈 2번째 메뉴 항목 탭
+   //await clickElement(driver, '(//android.widget.ImageView[@resource-id="com.sampleapp.cbt:id/characterImageView"])[1]'); //가게배달 1번째 탭 선택
+   await clickElement(driver, '(//android.widget.ImageView[@resource-id="com.sampleapp.cbt:id/characterImageView"])[2]'); //가게배달 2번째 탭 선택
    //await tapElement(driver, '가게에서 자체 배달!!!, 가게배달 버튼');
    await clickElement(driver, '//android.widget.TextView[@content-desc="검색 하단탭 버튼"]'); // 하단 검색탭 선택
    await clickElement(driver, '//android.widget.TextView[@resource-id="com.sampleapp.cbt:id/keyword" and @text="채영"]'); //최근검색어 채영 선택
@@ -70,7 +71,8 @@ async function runTest() {
    } catch  { }
    await clickElement(driver, '//androidx.compose.ui.platform.ComposeView[@resource-id="com.sampleapp.cbt:id/shopDetailCartInfoButton"]/android.view.View/android.view.View/android.view.View/android.widget.Button'); //장바구니 보기 버튼 
    await clickElement(driver,'//android.widget.Button[@text="포장 6~26분 후 픽업"]'); // 포장선택
-   await clickElement(driver, '//android.view.View[@resource-id="root"]/android.view.View[3]/android.view.View[1]/android.widget.TextView'); //배달 주문하기
+   await clickElement(driver, '//android.view.View[@resource-id="root"]/android.view.View[3]/android.view.View[1]/android.widget.TextView'); //포장 주문하기
+   //await clickElement(driver, '//android.widget.Button[@text="48,000원 포장 주문하기"]'); //포장 주문하기
    
   try {
     await clickElement(driver, '//android.widget.TextView[@text="기타 결제수단"]'); // 기타 결제수단 선택
@@ -80,6 +82,8 @@ async function runTest() {
   } catch {  }
 
    await clickElement(driver, '//android.widget.Button[@resource-id="pay-cta-button"]'); // n원 결제하기
+   //await clickElement(driver, '	//android.view.View[@resource-id="root"]/android.view.View[6]'); // 결제하기
+   await driver.pause(10000);
    await clickElement(driver, '//android.widget.TextView[@text="결제상품"]'); // 결제상품 토글 닫기
    await clickElement(driver, '//android.widget.TextView[@text="결제수단"]'); // 결제수단 토글 닫기
    await clickElement(driver, '//android.widget.TextView[@text="결제상세"]'); // 결제상세 토글 닫기
