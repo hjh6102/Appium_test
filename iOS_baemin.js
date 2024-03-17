@@ -55,6 +55,7 @@ const capabilities = {
     //await clickElement(driver, '(//XCUIElementTypeCell[@name="선택안됨, 4731, 즐겨찾기, 라디오 버튼"])[1]/XCUIElementTypeImage');
 
     // 확인 텍스트를 선택 Xpath : //XCUIElementTypeStaticText[@name="1 확인"]
+    // 확인 텍스트를 선택 Xpath : //XCUIElementTypeStaticText[@name="1 확인"]
     await clickElement(driver, '~1 확인');
 
     
