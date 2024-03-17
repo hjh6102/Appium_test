@@ -111,19 +111,6 @@ async function runTest() {
    */
    // 5초대기
    await driver.pause(5000);
-
-   // 채팅 아이콘을 찾아서 클릭
-   //await clickElement(driver, '//*[@text="채팅"]');
-
-   // + 아이콘을 찾아서 클릭 (XPath 값으로 수정)
-   //await clickElement(driver, '//android.widget.Button[@content-desc="대화 시작하기"]');
-
-   // 일반 채팅 텍스트를 찾아서 클릭 (XPath 값으로 수정)
-   //await clickElement(driver, '//android.widget.TextView[@text="일반채팅"]');
-
-   // 첫 번째 유저 클릭 (XPath 값으로 수정)
-   //await clickElement(driver, '(//android.widget.RelativeLayout[@resource-id="com.kakao.talk:id/deactive_background"])[1]/android.view.ViewGroup');
-
   
   } finally {
     await driver.pause(3000);
