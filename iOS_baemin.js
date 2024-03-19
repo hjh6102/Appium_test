@@ -42,23 +42,7 @@ const capabilities = {
     const driver = await remote(wdOpts);
   
     try {
-    // 채팅 아이콘을 찾아서 클릭 (Accessibility ID 값으로 수정)
-    //await clickElement(driver, '//XCUIElementTypeButton[@name="com.kakao.tabbaritem.chats"]');
 
-    // + 아이콘을 찾아서 클릭 (Accessibility ID 값으로 수정)
-    //await clickElement(driver, '//XCUIElementTypeButton[@name="새로운 채팅"]');
-
-    // 일반채팅을 찾아서 클릭
-    //await clickElement(driver, '//XCUIElementTypeButton[@name="일반채팅"]');
-
-    // 대화상대 선택에서 첫번째 유저 선택
-    //await clickElement(driver, '(//XCUIElementTypeCell[@name="선택안됨, 4731, 즐겨찾기, 라디오 버튼"])[1]/XCUIElementTypeImage');
-
-    // 확인 텍스트를 선택 Xpath : //XCUIElementTypeStaticText[@name="1 확인"]
-    // 확인 텍스트를 선택 Xpath : //XCUIElementTypeStaticText[@name="1 확인"]
-    await clickElement(driver, '~1 확인');
-
-    
   
     } finally {
       await driver.pause(3000); // 테스트를 확인하기 위해 잠시 기다림
