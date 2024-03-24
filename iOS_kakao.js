@@ -4,7 +4,7 @@ const capabilities = {
     platformName: 'iOS',
     'appium:automationName': 'XCUITest',
     'appium:udid': '00008120-001159681490A01E',  // 여기에 실제 기기의 UDID를 입력하세요
-    'appium:bundleId': 'com.iwilab.KakaoTalk',
+    'appium:bundleId': 'com.iwilab.KakaoTalk', // 카카오 beta
     'appium:noReset': 'true',
     'appium:autoAcceptAlerts': 'true',  // iOS에서 알림을 자동으로 허용
     'appium:platformVersion': '17.2.1',
