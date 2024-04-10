@@ -42,7 +42,7 @@ async function runTest() {
      //await touchAction(driver, '//*[@text="안녕하세요"]', 'longpress'); //longpress 기능
 
   } finally {
-    await driver.pause(3000);
+    await driver.pause(5000);
     await driver.deleteSession();
   }
 }
