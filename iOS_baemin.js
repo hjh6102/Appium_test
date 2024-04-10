@@ -45,7 +45,7 @@ const capabilities = {
 
   
     } finally {
-      await driver.pause(5000); // 테스트를 확인하기 위해 잠시 기다림
+      await driver.pause(3000); // 테스트를 확인하기 위해 잠시 기다림
       await driver.deleteSession();
     }
   }
